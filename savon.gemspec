@@ -1,6 +1,6 @@
 # -*- encoding : utf-8 -*-
 lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+$:.unshift(lib) unless $:.include?(lib)
 
 require "savon/version"
 
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
   s.add_dependency "nokogiri", ">= 1.4.0", "< 1.6"
 
   s.add_development_dependency "rack"
+  s.add_development_dependency 'activemodel', '>= 3.2.11'
   s.add_development_dependency "puma",  "2.0.0.b4"
 
   s.add_development_dependency "rake",  "~> 10.1"

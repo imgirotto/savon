@@ -1,12 +1,13 @@
 # -*- encoding : utf-8 -*-
 lib = File.expand_path("../lib", __FILE__)
-$:.unshift lib unless $:.include? lib
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require "savon/version"
 
 Gem::Specification.new do |s|
   s.name        = "savon"
   s.version     = Savon::VERSION
+  s.platform    = Gem::Platform::RUBY
   s.authors     = "Daniel Harrington"
   s.email       = "me@rubiii.com"
   s.homepage    = "http://savonrb.com"

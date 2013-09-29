@@ -1,5 +1,6 @@
 # -*- encoding : utf-8 -*-
-lib = File.expand_path("~/apps/redeeducacao/shared/bundle/ruby/1.9.1/gems/savon-2.3.0/lib", __FILE__)
+lib = File.expand_path("../../shared/bundle/ruby/1.9.1/gems/savon-2.3.0/lib", __FILE__)
+# lib = File.expand_path("~/apps/redeeducacao/shared/bundle/ruby/1.9.1/gems/savon-2.3.0/lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require "savon/version"
